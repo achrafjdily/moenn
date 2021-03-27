@@ -1,0 +1,123 @@
+@import "~@angular/material/theming";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+
+$moenn-warn: (
+  50: #faeae6,
+  100: #f2cac2,
+  200: #e9a699,
+  300: #e08270,
+  400: #da6851,
+  500: #d34d32,
+  600: #ce462d,
+  700: #c83d26,
+  800: #c2341f,
+  900: #b72513,
+  A100: #ffeae8,
+  A200: #ffbbb5,
+  A400: #ff8d82,
+  A700: #ff7569,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$moenn-primary: (
+  50 : #ebf2f8,
+  100 : #cee0ee,
+  200 : #aecbe3,
+  300 : #8db6d8,
+  400 : #74a6cf,
+  500 : #5c96c7,
+  600 : #548ec1,
+  700 : #4a83ba,
+  800 : #4179b3,
+  900 : #3068a6,
+  A100 : #ecf5ff,
+  A200 : #b9d9ff,
+  A400 : #86bdff,
+  A700 : #6dafff,
+contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$moenn-accent: (
+  50: #eaebec,
+  100: #cccdcf,
+  200: #aaacaf,
+  300: #878b8f,
+  400: #6e7277,
+  500: #54595f,
+  600: #4d5157,
+  700: #43484d,
+  800: #3a3e43,
+  900: #292e32,
+  A100: #86c0fb,
+  A200: #54a7f9,
+  A400: #1b8dff,
+  A700: #0280ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$moenn-primary: mat-palette($moenn-primary);
+$moenn-accent: mat-palette($moenn-accent);
+
+// The warn palette is optional (defaults to red).
+$moenn-warn: mat-palette($moenn-warn);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as `color` or `typography`.
+
+$moenn-theme: mat-light-theme($moenn-primary, $moenn-accent, $moenn-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
